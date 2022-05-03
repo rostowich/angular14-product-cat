@@ -31,7 +31,7 @@ export class ProductAddComponent implements OnInit {
     this.submitted = true;
     if(this.productFormGroup.invalid) return;
     this.productService.save(this.productFormGroup.value)
-      .subscribe(data=>{
+      .subscribe((data)=>{
         this.eventDrivenService.publishEvent({type:ProductActionTypes.PRODUCT_ADDED})
         alert("Success saving products");
       })

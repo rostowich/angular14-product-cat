@@ -1,5 +1,5 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {ActionEvent, ProductActionTypes} from "../../../state/product.state";
+import {Component, OnInit} from '@angular/core';
+import {ProductActionTypes} from "../../../state/product.state";
 import {EventDrivenService} from "../../../state/event-driven.service";
 
 @Component({
